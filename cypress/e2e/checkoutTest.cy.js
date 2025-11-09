@@ -8,7 +8,7 @@ describe('Checkout', () => {
         cy.registerUser('Afrodite', 'afrodite@teste.com', 'senha123');
         cy.acessarTelaLogin();
         cy.login('afrodite@teste.com', 'senha123');
-        cy.contains('a', `Logged in as LaisTeste`);
+        cy.contains('a', `Logged in as Afrodite`);
 
         cy.get('a[href="/products"]').click();
         cy.url().should('include', '/products');
