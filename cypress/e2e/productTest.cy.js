@@ -32,9 +32,5 @@ describe('Products', () => {
         cy.contains('h2', 'Searched Products');
         cy.get('.single-products').should('be.visible');
     });
-
-    it('Test Case 10: Verify Subscription in home page', () => {});
-
-    it('Test Case 15: Place Order: Register before Checkout', () => {});   
 });
     
