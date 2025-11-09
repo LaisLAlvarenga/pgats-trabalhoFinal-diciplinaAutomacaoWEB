@@ -16,7 +16,7 @@ describe('Checkout', () => {
         cy.contains('p', 'Your product has been added to cart.');
         cy.contains('button', 'Continue Shopping').click();
 
-        cy.get('a[href="/view_cart"]').click();
+        cy.get('a[href="/view_cart"]').first().click();
         cy.url().should('include', '/view_cart');
         cy.contains('a', 'Proceed To Checkout').click();
         
